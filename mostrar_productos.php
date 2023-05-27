@@ -15,47 +15,43 @@
     </head>
 <body>
 
-<nav class="navbar navbar-expand-lg m-0">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="img/Logo/logo.jpg" alt="logo"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav w-100 d-flex justify-content-between">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="ellas+bellas.php">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                    <select class="form-select" aria-label="Default select example">
-                      <option selected>Tratamientos</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                    </select>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Ubicación</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="mostrar_productos.php">Productos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="mostrar_aparatos.php">Aparatología</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link"><i class="fa fa-instagram"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link"><i class="fa fa-whatsapp"></i></a>
-                    </li>
-                </ul>
-            </div>
+   <!-- Barra de navegación -->
+   <nav class="navbar navbar-expand-lg m-0">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="img/Logo/logo.jpg" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav w-100 d-flex justify-content-between">
+                <li class="nav-item">
+                    <a class="nav-link" href="servicios.php">Tratamientos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Ubicación</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="mostrar_productos.php">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="mostrar_aparatos.php">Aparatología</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link"><i class="fa fa-instagram"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link"><i class="fa fa-whatsapp"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a href="login_administradores.php" class="nav-link"><i class="fa fa-cog"></i></a>
+                </li>
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>
 
 <?php
 

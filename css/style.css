@@ -407,6 +407,132 @@ form .btn-primary:hover {
   
 }
 
+img {
+  width: 100%; /* need to overwrite inline dimensions */
+  height: auto;
+}
+
+h2 {
+    margin-top:100px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h1{
+  margin-top:100px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  grid-gap: 0em;
+  }
+
+/* hover styles */
+.location-listing {
+  position: relative;
+  }
+
+  .location-image {
+  line-height: 0;
+  overflow: hidden;
+  }
+
+  .location-image img {
+  filter: blur(0px);
+  transition: filter 0.3s ease-in;
+  transform: scale(1.1);
+  }
+
+  .location-title {
+  font-size: 2.5em;
+  text-align: center;
+  text-decoration: none;
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity .5s;
+  background: rgba(102, 32, 98, 0.486);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+
+  .location-listing:hover .location-title {
+  opacity: 1;
+  color: rgb(0, 0, 0);
+  }
+
+  .location-listing:hover .location-image img {
+  filter: blur(2px);
+  }
+
+
+  /* for touch screen devices */
+  @media (hover: none) { 
+    .location-title {
+        opacity: 1;
+    }
+    .location-image img {
+        filter: blur(2px);
+    }
+  }
+
+  .separator {
+      width: 30%;
+      height: 2px;
+      background-color: #050202;
+      position: relative;
+      margin: auto;
+      margin-bottom: 100px;
+   }
+
+    .contenedor_formulario {
+        /* Estilos para el contenedor del formulario */
+        background-color: #d372b1;
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .contenedor_formulario h2 {
+        /* Estilos para el encabezado */
+        /* Agrega aquí tus estilos personalizados */
+    }
+    
+    .contenedor_formulario label {
+        /* Estilos para los labels */
+        color: #8e0e4c;
+        /* Agrega aquí tus estilos personalizados */
+    }
+    
+    .contenedor_formulario input[type="text"],
+    .contenedor_formulario input[type="password"],
+    .contenedor_formulario input[type="submit"] {
+        /* Estilos para los campos de texto y botón de enviar */
+        border-radius: 10px;
+        padding: 10px;
+    }
+    
+    .contenedor_formulario input[type="submit"] {
+        background-color: white;
+    }
+    
+    .contenedor_formulario input[type="submit"]:hover {
+        background-color: #8e0e4c;
+        color: white;
+        cursor: pointer;
+    }
+
+
+
 
 
 
