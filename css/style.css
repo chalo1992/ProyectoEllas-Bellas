@@ -1,0 +1,432 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: sans-serif;
+}
+
+body {
+  opacity: 0;
+  animation: fadeIn 2s ease forwards;
+  background-color: #d372b1;
+}
+
+.tratamientos{
+  text-align: center;
+  background-color: #D9D2DB;
+  color: #d372b1;
+}
+
+.tratamientos h1{
+  margin: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: #d9d2db;
+  z-index: 1;
+}
+
+.navbar-nav li {
+  margin-right: 80px;
+}
+
+.navbar-nav li a {
+  color: #d372b1;
+  font-weight: bold;
+}
+
+.nav-link {
+  color: #d372b1 !important;
+  font-weight: bold !important;
+}
+
+ul.navbar-nav select.form-select {
+  background-color: #d9d2db;
+  color: #d372b1;
+  border-color: #d372b1;
+}
+
+.navbar-toggler {
+  border-color: #8e0e4c !important;
+}
+
+.navbar-toggler-icon {
+  color: #8e0e4c !important;
+}
+
+.navbar-collapse {
+  background-color: #d9d2db;
+  opacity: 1;
+}
+
+span a{
+  text-decoration: none;
+  color: #d372b1;
+}
+
+span a:hover{
+  text-decoration: none;
+  color: #8e0e4c;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 100%;
+  background-image: url('../img/FOTOS/mujer.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 5s;
+  animation-name: animate;
+  animation-direction: alternate-reverse;
+  animation-duration: 30s;
+  animation-fill-mode: forwards;
+  animation-iteration-count:infinite;
+  animation-play-state:running;
+  animation-timing-function:ease-in-out;
+}
+
+@keyframes animate{
+  0%{
+    background-image: url('../img/FOTOS/mujer.jpg');
+  }20%{
+    background-image: url('../img/FOTOS/cabina.jpg');
+  }40%{
+    background-image: url('../img/FOTOS/flores.jpg');
+  }60%{
+    background-image: url('../img/FOTOS/mujer.jpg');
+  }80%{
+    background-image: url('../img/FOTOS/cabina.jpg');
+  }100%{
+    background-image: url('../img/FOTOS/flores.jpg');
+  }
+}
+
+.contenido {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 50%;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#main_title{
+  font-size: 3em;
+	font-family: cursive;
+	text-align: center;
+	letter-spacing: 0.1em;
+	margin-top: 20px;
+  color: #8e0e4c;
+}
+
+#presentacion{
+  font-family: cursive;
+	text-align: center;
+  margin-top: 50px;
+  width: 90%;
+  color: #8e0e4c;
+}
+
+.contactar {
+  display: block;
+  margin: auto;
+  background-color: #d372b1;
+  border-radius: 20px;
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contactar:hover , .card .btn-primary:hover {
+  background-color: #8e0e4c;
+}
+
+.contenedor_filo{
+  height: 40vh;
+  background-color: #613F6C;
+}
+
+li, .contenedor_filo h1{
+  color: #D9D2DB;
+}
+
+.contenedor_carrousel{
+  height: 90vh;
+  background-color: #D9D2DB;
+  color: #d372b1;
+}
+
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+}
+
+.contenedorCartas{
+  height: 80vh;
+}
+
+.card{
+  height: 35rem !important;
+}
+
+.card .btn-primary{
+  background-color: #d372b1;
+  display: block;
+  margin: 0 auto;
+  border-radius: 20px;
+  border: 1px solid black;
+  color: white;
+}
+
+@media (max-width: 805px) {
+  .carousel-indicators {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .carousel-indicators li {
+    margin-bottom: 10px;
+  }
+}
+
+.citaInformacion{
+  background-color: #D9D2DB;
+}
+
+.grid-dinamica{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(2,1fr);
+}
+
+.contenedorFormularioMapa{
+  margin-top: 50px;
+  width: 100%;
+  height: 90vh;
+  background-color: #613F6C;
+}
+
+.formulario{
+  background-image: url('../img/FOTOS/flores.jpg');
+  grid-row: 1/3;
+  grid-column: 1/3;
+  background-color: yellow;
+}
+
+.mapa{
+  grid-row: span 2;
+  background-color: #613F6C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+label{
+  font-weight: bold;
+  color: white;
+}
+
+form .btn-primary{
+  background-color: #d372b1;
+  display: block;
+  margin: 0 auto;
+  border-radius: 20px;
+  border: 1px solid black;
+  color: black
+}
+
+form .btn-primary:hover {
+  background-color: #8e0e4c;
+}
+
+@media screen and (max-width: 805px) {
+  .grid-dinamica {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    height: 1000px;
+  }
+
+  .formulario {
+    margin: 0;
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+  .mapa {
+    grid-row: 3/4;
+    grid-column: 1/2;
+  }
+}
+
+.contenedor_colaboraciones{
+  height: 14vh;
+  display: flex;
+  justify-content: space-around;
+}
+
+.contenedor_colaboraciones img{
+  height: 92px;
+  width: 105px;
+}
+
+.contenedor_footer{
+  background-image: url('../img/FOTOS/hoja.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #8e0e4c;
+  height: 100%;
+}
+
+.contenedor_footer .nav-link{
+  color: #8e0e4c !important;
+}
+
+.productos-container, .aparatos-container{
+  background-image: url('../img/FOTOS/hoja.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.titulo-productos, .titulo-aparatos{
+  color: #8e0e4c;
+}
+
+.productos, .aparatos{
+  display: grid;
+  grid-template-columns: repeat(7,1fr);
+  grid-template-rows: repeat(3,1fr);
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  background-color: #D9D2DB;
+  border-collapse: collapse;
+  opacity: 0.9;
+  color: #8e0e4c;
+}
+
+.productos > div, .aparatos > div {
+  padding: 7px;
+}
+
+.producto_img, .aparato_img{
+  grid-column: 1/3;
+  grid-row: 1/4;
+  border: 2px solid #8e0e4c;
+}
+
+.producto_img img, .aparato_img img{
+  width: 300px;
+  height: 300px;
+}
+
+.nombre_producto, .nombre_aparato{
+  grid-column: 3/8;
+  grid-row: 1/2;
+  border: 2px solid #8e0e4c;
+  font-weight: bold;
+}
+
+.precio{
+  grid-row: 2/4;
+  grid-column: 7/8;
+  border: 2px solid #8e0e4c}
+
+.descripcion{
+  grid-row: 2/4;
+  grid-column: 3/7;
+  border: 2px solid #8e0e4c;
+}
+
+.descripcion_aparato{
+  grid-row: 2/4;
+  grid-column: 3/8;
+  border: 2px solid #8e0e4c;
+}
+
+@media (max-width: 1160px) {
+  .productos, .aparatos{
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .productos > div .aparatos > div{
+    padding: 7px;
+  }
+
+  .producto_img, .aparato_img{
+    border: 2px solid #8e0e4c;
+  }
+  
+  .producto_img img, .aparato_img img{
+    width: 300px;
+    height: 300px;
+  }
+  
+  .nombre_producto, .nombre_aparato{
+    border: 2px solid #8e0e4c;
+    font-weight: bold;
+  }
+  
+  .precio{
+    border: 2px solid #8e0e4c  
+  }
+  
+  .descripcion, .descripcion_aparato{
+    border: 2px solid #8e0e4c;
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+ 
+
+
+
+ 
+
+
+  
