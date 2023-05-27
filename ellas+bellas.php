@@ -26,12 +26,7 @@
                         <a class="nav-link active" aria-current="page" href="ellas+bellas.php">Inicio</a>
                     </li>
                     <li class="nav-item">
-                    <select class="form-select" aria-label="Default select example">
-                      <option selected>Tratamientos</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                    </select>
+                        <a class="nav-link" href="#">Tratamientos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Ubicación</a>
