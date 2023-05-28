@@ -23,7 +23,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav w-100 d-flex justify-content-between">
                 <li class="nav-item">
-                    <a class="nav-link" href="servicios.php">Tratamientos</a>
+                    <a class="nav-link" href="mostrar_servicios.php">Tratamientos</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Ubicación</a>

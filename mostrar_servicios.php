@@ -55,7 +55,7 @@
 
     <div class="child-page-listing">
 
-        <h1>Tipos de tratamientos</h1>
+        <h1 class="mt-5">Tipos de tratamientos</h1>
 
         <div class="separator"></div>
       

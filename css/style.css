@@ -496,10 +496,14 @@ h1{
 
     .contenedor_formulario {
         /* Estilos para el contenedor del formulario */
-        background-color: #d372b1;
+        background: linear-gradient(#D9D2DB, #E7E6E9);
         border-radius: 10px;
         padding: 20px;
         text-align: center;
+        width: 40%;
+        height: 500px;
+        display: block;
+        margin: auto;
     }
     
     .contenedor_formulario h2 {
@@ -529,6 +533,13 @@ h1{
         background-color: #8e0e4c;
         color: white;
         cursor: pointer;
+    }
+
+    .container_fluid{
+      background: linear-gradient(#D9D2DB, #E7E6E9);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
     }
 
 

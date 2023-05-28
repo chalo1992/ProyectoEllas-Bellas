@@ -75,22 +75,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </div>
 </nav>
 
+<div class="container_fluid">
 
-<div class="contenedor_formulario">
-<h2>Iniciar sesión</h2>
-    
-    <?php if (isset($error)) { ?>
-        <p><?php echo $error; ?></p>
-    <?php } ?>
-    
-    <form class="mt-5" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST">
-        <input type="text" id="username" name="username" placeholder="Nombre de usuario" required><br><br>
-        <input type="password" id="password" name="password" placeholder="Contraseña" required><br><br>
+    <div class="contenedor_formulario">
+    <h2 class="mt-5">Iniciar sesión</h2>
         
-        <input type="submit" value="Iniciar sesión">
-    </form>
-</div>
+        <?php if (isset($error)) { ?>
+            <p><?php echo $error; ?></p>
+        <?php } ?>
+        
+        <form class="mt-5" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST">
+            <input type="text" id="username" name="username" placeholder="Nombre de usuario" required><br><br>
+            <input type="password" id="password" name="password" placeholder="Contraseña" required><br><br>
+            
+            <input type="submit" value="Iniciar sesión">
+        </form>
+    </div>
 
+</div>
 <footer>
   <div class="contenedor_footer">
     <div class="row pt-5">
