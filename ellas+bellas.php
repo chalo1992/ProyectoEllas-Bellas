@@ -16,7 +16,7 @@
    <!-- Barra de navegación -->
 <nav class="navbar navbar-expand-lg m-0">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="img/Logo/logo.jpg" alt="logo"></a>
+        <a class="navbar-brand" href="ellas+bellas.php"><img src="img/Logo/logo.jpg" alt="logo"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -38,7 +38,7 @@
                     <a class="nav-link" href="#">Contacto</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/ellasmasbellasestetica/" class="nav-link"><i class="fa fa-instagram"></i></a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link"><i class="fa fa-whatsapp"></i></a>
@@ -76,11 +76,10 @@
         </p>
     </div>
 
-    <div class="tratamientos">
-        <h1 class="pt-4 tratamientos">TRATAMIENTOS</h1>
-    </div>
 
     <div class="contenedor_carrousel carousel-container">
+
+        <h1 class="pt-4 text-center text-light">TRATAMIENTOS</h1>
 
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -187,35 +186,35 @@
 
     </div>
 
-    <h3 class="text-center m-0 p-0 citaInformacion">Solicita una cita o pide información</h3>
 
     <div class="contenedorFormularioMapa grid-dinamica m-0 pt-3">
 
         <div class="formulario">
-            <form class="w-75 m-0 mx-auto mt-5">
-                <div class="form-group">
-                    <label for="nombre">Nombre: </label>
-                    <input type="text" class="form-control" id="nombre" aria-describedby="emailHelp" placeholder="Nombre:">
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputPassword1">Apellidos: </label>
-                    <input type="text" class="form-control" id="exampleInputApellidos: 1" placeholder="Apellidos:">
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputPassword1">Teléfono: </label>
-                    <input type="text" class="form-control" id="exampleInputtelefono: 1" placeholder="Teléfono:">
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Email: </label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email:">
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlTextarea1">Example textarea</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Asunto:"></textarea>
-                </div>
-                
-                <button type="submit" class="btn btn-primary">Enviar</button>
-            </form>
+        <form action="https://formsubmit.co/chalo1992@hotmail.com" class="w-75 m-0 mx-auto mt-5" method="POST">
+            <h3 class="text-center text-light pb-3">Solicita una cita o pide información</h3>
+            <div class="form-group">
+                <label for="nombre">Nombre: </label>
+                <input type="text" class="form-control" name="nombre" id="nombre" aria-describedby="emailHelp" placeholder="Nombre:">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Apellidos: </label>
+                <input type="text" class="form-control" name="apellidos" id="exampleInputApellidos: 1" placeholder="Apellidos:">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Teléfono: </label>
+                <input type="text" class="form-control" name="telefono" id="exampleInputtelefono: 1" placeholder="Teléfono:">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email: </label>
+                <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email:">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Mensaje: </label>
+                <textarea class="form-control" name="mensaje" id="exampleFormControlTextarea1" rows="3" placeholder="Mensaje:"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+
 
         </div>
 

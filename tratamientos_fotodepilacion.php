@@ -64,13 +64,13 @@
         exit();
     }
 
-    $consulta="SELECT * FROM productos";
+    $consulta="SELECT * FROM tratamientos WHERE cod_tip=2;";
 
 	$resultados=mysqli_query($conexion,$consulta);
 
-    echo "<div class='productos-container'>";
+    echo "<div class='aparatos-container'>";
     
-        echo "<h1 class='text-center pt-5 titulo-productos'>PRODUCTOS</h1>";
+        echo "<h1 class='text-center pt-5 titulo-aparatos'>TRATAMIENTOS FOTODEPILACIÓN</h1>";
 
         while ($fila=mysqli_fetch_assoc($resultados)){
             

@@ -13,18 +13,16 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- Barra de navegación -->
-   <!-- Barra de navegación -->
    <nav class="navbar navbar-expand-lg m-0">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="img/Logo/logo.jpg" alt="logo"></a>
+        <a class="navbar-brand" href="ellas+bellas.php"><img src="img/Logo/logo.jpg" alt="logo"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav w-100 d-flex justify-content-between">
                 <li class="nav-item">
-                    <a class="nav-link" href="servicios.php">Tratamientos</a>
+                    <a class="nav-link" href="mostrar_servicios.php">Tratamientos</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Ubicación</a>
@@ -39,7 +37,7 @@
                     <a class="nav-link" href="#">Contacto</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/ellasmasbellasestetica/" class="nav-link"><i class="fa fa-instagram"></i></a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link"><i class="fa fa-whatsapp"></i></a>
@@ -55,7 +53,7 @@
 
     <div class="child-page-listing">
 
-        <h1 class="mt-5">Tipos de tratamientos</h1>
+        <h1 class="pt-5">Tipos de tratamientos</h1>
 
         <div class="separator"></div>
       
@@ -63,10 +61,8 @@
       
           <article id="3685" class="location-listing">
             
-            <a class="location-title" href="#">
-             Depilación</a>
+            <a class="location-title" href="tratamientos_depilacion.php">Depilación</a>
                 
-      
             <div class="location-image">
               <a href="#">
                   <img width="300" height="169" src="img/FOTOS/Tipos/Depilacion/depilacion_axilas1.jpg" alt="Depilación"></a>
@@ -76,8 +72,7 @@
       
           <article id="3688" class="location-listing">
       
-            <a class="location-title" href="#">
-                Fotodepilación            </a>
+            <a class="location-title" href="tratamientos_fotodepilacion.php">Fotodepilación</a>
       
             <div class="location-image">
               <a href="#">
@@ -89,8 +84,7 @@
       
           <article id="3691" class="location-listing">
       
-            <a class="location-title" href="#">
-                Faciales            </a>
+            <a class="location-title" href="tratamientos_faciales.php">Faciales</a>
       
             <div class="location-image">
               <a href="#">
@@ -102,8 +96,7 @@
       
           <article id="3694" class="location-listing">
       
-            <a class="location-title" href="#">
-                Corporales           </a>
+            <a class="location-title" href="tratamientos_corporales.php">Corporales</a>
       
             <div class="location-image">
               <a href="#">
@@ -115,8 +108,7 @@
       
           <article id="3697" class="location-listing">
       
-            <a class="location-title" href="#">
-                Cuidado de manos y pies           </a>
+            <a class="location-title" href="tratamiento_cuidadoManosPies.php">Cuidado de manos y pies</a>
       
             <div class="location-image">
               <a href="#">
@@ -128,8 +120,7 @@
       
           <article id="3700" class="location-listing">
       
-            <a class="location-title" href="#">
-                Maquillaje y pestañas           </a>
+            <a class="location-title" href="tratamientos_maquillajeManosPestañas.php">Maquillaje y pestañas</a>
       
             <div class="location-image">
               <a href="#">
@@ -141,8 +132,7 @@
 
           <article id="3694" class="location-listing">
       
-            <a class="location-title" href="#">
-                Masajes           </a>
+            <a class="location-title" href="tratamientos_masajes.php">Masajes</a>
       
             <div class="location-image">
               <a href="#">
@@ -154,8 +144,7 @@
       
           <article id="3697" class="location-listing">
       
-            <a class="location-title" href="#">
-                Ofertas especiales           </a>
+            <a class="location-title" href="tratamientos_ofertas.php">Ofertas especiales</a>
       
             <div class="location-image">
               <a href="#">
@@ -167,8 +156,7 @@
       
           <article id="3700" class="location-listing">
       
-            <a class="location-title" href="#">
-                Ellas + Bellas <br> Centro de estética <br> Descubre la mágia... <br> 665142522           </a>
+            <a class="location-title" href="#">Ellas + Bellas <br> Centro de estética <br> Descubre la mágia... <br> 665142522           </a>
       
             <div class="location-image">
               <a href="#">
@@ -179,7 +167,6 @@
           </article>
       
         </div>
-        <!-- end grid container -->
       
       </div>
 

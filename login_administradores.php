@@ -1,25 +1,3 @@
-<?php
-// Verificar si se ha enviado el formulario
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Obtener los valores del formulario
-    $username = $_POST["username"];
-    $password = $_POST["password"];
-    $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
-    
-    // Verificar el usuario y la contraseña (aquí debes implementar tu propia lógica de validación)
-    if ($username === "soraya.lopez" && password_verify($password, $hashedPassword)) {
-        // Iniciar sesión (si es necesario)
-        
-        // Redirigir a la página de administradores
-        header("Location: administradores.php");
-        exit();
-    } else {
-        // Usuario y/o contraseña incorrectos
-        $error = "Usuario y/o contraseña incorrectos.";
-    }
-}
-?>
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -47,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav w-100 d-flex justify-content-between">
                 <li class="nav-item">
-                    <a class="nav-link" href="servicios.php">Tratamientos</a>
+                    <a class="nav-link" href="mostrar_servicios.php">Tratamientos</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Ubicación</a>
@@ -80,15 +58,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <div class="contenedor_formulario">
     <h2 class="mt-5">Iniciar sesión</h2>
         
-        <?php if (isset($error)) { ?>
-            <p><?php echo $error; ?></p>
-        <?php } ?>
         
-        <form class="mt-5" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST">
+        
+        <form class="mt-5" action="verificar_login.php" method="POST">
             <input type="text" id="username" name="username" placeholder="Nombre de usuario" required><br><br>
             <input type="password" id="password" name="password" placeholder="Contraseña" required><br><br>
-            
-            <input type="submit" value="Iniciar sesión">
+            <input type="submit" value="Iniciar sesión" name="iniciar">
         </form>
     </div>
 

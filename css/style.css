@@ -3,24 +3,16 @@ html, body {
   padding: 0;
   width: 100%;
   height: 100%;
-  font-family: sans-serif;
+  font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 body {
   opacity: 0;
   animation: fadeIn 2s ease forwards;
-  background-color: #d372b1;
-}
-
-.tratamientos{
-  text-align: center;
   background-color: #D9D2DB;
-  color: #d372b1;
+  font-style:italic; 
 }
 
-.tratamientos h1{
-  margin: 0;
-}
 
 @keyframes fadeIn {
   from {
@@ -40,6 +32,7 @@ body {
   background-color: #d9d2db;
   z-index: 1;
 }
+
 
 .navbar-nav li {
   margin-right: 80px;
@@ -83,6 +76,10 @@ span a:hover{
   text-decoration: none;
   color: #8e0e4c;
   font-weight: bold;
+}
+
+.navbar-nav .nav-item:hover .nav-link {
+  color: #8e0e4c !important;
 }
 
 .container {
@@ -170,17 +167,20 @@ span a:hover{
 
 .contenedor_filo{
   height: 40vh;
-  background-color: #613F6C;
+  background-color: #D9D2DB;
 }
 
 li, .contenedor_filo h1{
-  color: #D9D2DB;
+  color: #8e0e4c;
 }
 
 .contenedor_carrousel{
-  height: 90vh;
+  height: 110vh;
   background-color: #D9D2DB;
-  color: #d372b1;
+  background-image: url('../img/FOTOS/flores.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .carousel-indicators li {
@@ -217,10 +217,6 @@ li, .contenedor_filo h1{
   }
 }
 
-.citaInformacion{
-  background-color: #D9D2DB;
-}
-
 .grid-dinamica{
   display: grid;
   grid-template-columns: repeat(3,1fr);
@@ -230,15 +226,14 @@ li, .contenedor_filo h1{
 .contenedorFormularioMapa{
   margin-top: 50px;
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   background-color: #613F6C;
 }
 
 .formulario{
-  background-image: url('../img/FOTOS/flores.jpg');
+  background-color: #613F6C;
   grid-row: 1/3;
   grid-column: 1/3;
-  background-color: yellow;
 }
 
 .mapa{
@@ -296,16 +291,21 @@ form .btn-primary:hover {
   width: 105px;
 }
 
-.contenedor_footer{
+.contenedor_footer {
+  background-color: rgba(0, 0, 0, 0.8) !important;
   background-image: url('../img/FOTOS/hoja.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  color: #8e0e4c;
   height: 100%;
+  color: #8e0e4c;
 }
 
-.contenedor_footer .nav-link{
+.contenedor_footer .nav-link {
   color: #8e0e4c !important;
+}
+
+.contenedor_footer p{
+  font-size: 20px;
 }
 
 .productos-container, .aparatos-container{
@@ -430,7 +430,10 @@ h1{
   grid-gap: 0em;
   }
 
-/* hover styles */
+.child-page-listing{
+  background-color: #E6E7E9;
+}
+
 .location-listing {
   position: relative;
   }
@@ -474,8 +477,6 @@ h1{
   filter: blur(2px);
   }
 
-
-  /* for touch screen devices */
   @media (hover: none) { 
     .location-title {
         opacity: 1;
@@ -495,26 +496,26 @@ h1{
    }
 
     .contenedor_formulario {
-        /* Estilos para el contenedor del formulario */
-        background: linear-gradient(#D9D2DB, #E7E6E9);
+        background-image: url('../img/FOTOS/hoja.jpg');
         border-radius: 10px;
-        padding: 20px;
+        padding: 10px;
         text-align: center;
-        width: 40%;
-        height: 500px;
+        width: 30%;
+        height: 450px;
         display: block;
         margin: auto;
+        border: 2px solid #8e0e4c;
+        box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
     }
-    
-    .contenedor_formulario h2 {
-        /* Estilos para el encabezado */
-        /* Agrega aquí tus estilos personalizados */
-    }
-    
+
+    @media (max-width: 768px) {
+      .contenedor_formulario {
+          width: 400px;
+      }
+  }
+
     .contenedor_formulario label {
-        /* Estilos para los labels */
         color: #8e0e4c;
-        /* Agrega aquí tus estilos personalizados */
     }
     
     .contenedor_formulario input[type="text"],
@@ -536,11 +537,71 @@ h1{
     }
 
     .container_fluid{
-      background: linear-gradient(#D9D2DB, #E7E6E9);
+      background-color: #DDDFE0;
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
     }
+
+    .contenedorBienvenida{
+      background-image: url('../img/FOTOS/hoja.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 53vh;
+      width: 100%;
+    }
+
+    .boton_cerrar{
+      background-color: #d372b1;
+      display: block;
+      margin: 0 auto;
+      padding: 8px;
+      border-radius: 20px;
+      border: 1px solid black;
+    }
+
+    .boton_cerrar a{
+      text-decoration: none !important;
+      color: white;
+    }
+
+    .boton_cerrar a:hover{
+      color: white;
+    }
+
+    .boton_cerrar:hover{
+      background-color: #8e0e4c;
+    }
+
+    table td{
+      text-align:center;
+      border:medium solid #8e0e4c;
+    
+    }
+    
+    table .sin{
+      border:0;
+    }
+    
+    table .bot{
+      padding:0 5px;
+      display:inline;
+      border:0;
+    }
+    
+    table .primera_fila{
+      font-size:1.5em;
+      text-decoration:underline;
+      background-color:#d372b1;
+    }
+    
+    .centrado{
+      text-align:center;
+    }
+
+   
+
 
 
 
