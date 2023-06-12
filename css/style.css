@@ -4,6 +4,7 @@ html, body {
   width: 100%;
   height: 100%;
   font-family:Georgia, 'Times New Roman', Times, serif;
+  overflow-x: hidden !important;
 }
 
 body {
@@ -166,55 +167,90 @@ span a:hover{
 }
 
 .contenedor_filo{
-  height: 40vh;
+  
   background-color: #D9D2DB;
+}
+
+.list li{
+  line-height: 2.5;
+  font-size: 18px;
+}
+
+.fila{
+  display: flex;
+  justify-content: space-between;
 }
 
 li, .contenedor_filo h1{
   color: #8e0e4c;
 }
 
-.contenedor_carrousel{
-  height: 110vh;
-  background-color: #D9D2DB;
-  background-image: url('../img/FOTOS/flores.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.carousel-indicators li {
-  width: 10px;
-  height: 10px;
-  margin: 0 5px;
-}
-
-.contenedorCartas{
-  height: 80vh;
-}
-
-.card{
-  height: 35rem !important;
-}
-
-.card .btn-primary{
-  background-color: #d372b1;
+.video-container{
   display: block;
-  margin: 0 auto;
-  border-radius: 20px;
-  border: 1px solid black;
-  color: white;
+  margin: auto;
 }
 
-@media (max-width: 805px) {
-  .carousel-indicators {
-    display: flex;
+@media screen and (max-width: 767px) {
+  .fila {
     flex-direction: column;
     align-items: center;
   }
-  .carousel-indicators li {
-    margin-bottom: 10px;
+
+  .video-container {
+    margin-top: 20px;
+    margin-bottom: 20px; /* Agrega un margen inferior para separar el video del contenedor de carrusel */
   }
+
+  .contenedor_filo {
+    height: auto !important; /* Ajusta la altura automáticamente para adaptarse al contenido */
+  }
+
+  .contenido{
+    min-width: 350px;
+  }
+}
+
+.contenedor_carrousel{
+  background-color: #D9D2DB;
+}
+
+.carousel-item {
+  position: relative;
+}
+
+.imgHeight{
+  height: 550px;
+}
+
+.carousel-item .card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25%;
+  max-width: 400px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.card-header{
+  color: #8e0e4c !important;
+  font-weight: bold !important;
+  text-align: center;
+  font-size: 23px;
+}
+
+.btn-custom {
+  background-color: #d372b1 !important;
+  color: white !important;
+  border: 2px solid black !important;
+  border-radius: 20px !important;
+}
+
+.btn-custom:hover{
+  background-color: #8e0e4c !important;
+  color: white !important;
 }
 
 .grid-dinamica{
@@ -226,7 +262,7 @@ li, .contenedor_filo h1{
 .contenedorFormularioMapa{
   margin-top: 50px;
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   background-color: #613F6C;
 }
 
@@ -266,7 +302,11 @@ form .btn-primary:hover {
   .grid-dinamica {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
-    height: 1000px;
+    height: auto;
+  }
+
+  .contenedorFormularioMapa{
+    height: 170vh;
   }
 
   .formulario {
@@ -275,8 +315,23 @@ form .btn-primary:hover {
     grid-column: 1/2;
   }
   .mapa {
-    grid-row: 3/4;
+    grid-row: 2/4;
     grid-column: 1/2;
+  }
+
+  .carousel-item .card{
+    min-width: 350px !important;
+  }
+
+  .contenedor_colaboraciones{
+    height: 14vh;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .contenedor_colaboraciones img{
+    height: 92px;
+    width: 105px;
   }
 }
 
@@ -574,31 +629,23 @@ h1{
       background-color: #8e0e4c;
     }
 
-    table td{
-      text-align:center;
-      border:medium solid #8e0e4c;
-    
+    .hr{
+      border: 2px solid #8e0e4c;
+      margin-top: 35px;
     }
-    
-    table .sin{
-      border:0;
+
+    .table{
+      background-color: #D9D2DB;
+      border-collapse: collapse; 
+      border: 2px solid #613F6C;
     }
-    
-    table .bot{
-      padding:0 5px;
-      display:inline;
-      border:0;
+
+    .thead-light th,th,td{
+      text-align: center;
     }
+   
+
     
-    table .primera_fila{
-      font-size:1.5em;
-      text-decoration:underline;
-      background-color:#d372b1;
-    }
-    
-    .centrado{
-      text-align:center;
-    }
 
    
 

@@ -14,11 +14,9 @@
 </head>
 <body>
 
-
-   <!-- Barra de navegación -->
 <nav class="navbar navbar-expand-lg m-0">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="img/Logo/logo.jpg" alt="logo"></a>
+        <a class="navbar-brand" href="ellas+bellas.php"><img src="img/Logo/logo.jpg" alt="logo"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -40,10 +38,10 @@
                     <a class="nav-link" href="#">Contacto</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/ellasmasbellasestetica/" class="nav-link"><i class="fa fa-instagram"></i></a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link"><i class="fa fa-whatsapp"></i></a>
+                    <a href="" class="nav-link"><i class="fa fa-whatsapp"></i></a>
                 </li>
                 <li class="nav-item">
                     <a href="login_administradores.php" class="nav-link"><i class="fa fa-cog"></i></a>

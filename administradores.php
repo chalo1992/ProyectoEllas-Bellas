@@ -13,7 +13,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 <body>
-   <!-- Barra de navegación -->
+  
 <nav class="navbar navbar-expand-lg m-0">
     <div class="container-fluid">
         <a class="navbar-brand" href="ellas+bellas.php"><img src="img/Logo/logo.jpg" alt="logo"></a>
@@ -26,10 +26,10 @@
                     <a class="nav-link" href="tratamientos_administrador.php">Tratamientos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="tratamientos_administrador.php">Productos</a>
+                    <a class="nav-link" href="productos_administrador.php">Productos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="tratamientos_administrador.php">Aparatología</a>
+                    <a class="nav-link" href="aparatos_administrador.php">Aparatología</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="login_administradores.php">Cerrar sesión</a>

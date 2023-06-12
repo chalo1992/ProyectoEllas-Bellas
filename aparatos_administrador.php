@@ -42,7 +42,7 @@
     </nav>
 
     <div class="contenedorTabla">
-        <a href="formAgregar_tratamiento.php" class="btn btn-dark mt-5">Agregar tratamiento</a>
+        <a href="formAgregar_aparato.php" class="btn btn-dark mt-5">Agregar aparato</a>
         <hr class="hr">
         <table class="table mt-5">
             <thead class="thead-light">
@@ -50,9 +50,7 @@
                 <th scope="col">#</th>
                 <th scope="col">Nombre</th>
                 <th scope="col">Descripción</th>
-                <th scope="col">Precio</th>
                 <th scope="col">IMG</th>
-                <th scope="col">Codigo tipo</th>
                 <th scope="col">Acciones</th>
                 </tr>
             </thead>
@@ -61,20 +59,18 @@
             <?php
                 include('conexion_tienda.php');
                 $conexion=mysqli_connect($direccion_BBDD,$usuario_BBDD,$contra_BBDD,$nombre_BBDD);
-                $sql="SELECT * FROM tratamientos";
+                $sql="SELECT * FROM aparatos";
                 $resultado=$conexion->query($sql);
                 while($fila=$resultado->fetch_assoc()) {?>
                     
                 <tr>
-                    <th scope="row"><?php $fila['cod_trat'] ?></th>
+                    <th scope="row"><?php $fila['cod_ap'] ?></th>
                     <td><?php echo $fila['nombre'] ?></td>
                     <td style="width:300px"><?php echo $fila['descripcion'] ?></td>
-                    <td><?php echo $fila['precio'] ?></td>
-                    <td><img style="width:200px" src="data:image/jpg;base64,<?php echo base64_encode($fila['img'])?>" alt="tratamiento"></td>
-                    <td><?php echo $fila['cod_tip'] ?></td>
+                    <td><img style="width:200px; height:200px" src="data:image/jpg;base64,<?php echo base64_encode($fila['img'])?>" alt="aparato"></td>
                     <td>
-                        <a href="formulario_editar_tratamiento.php?cod_trat=<?php echo $fila['cod_trat']; ?>" class="btn btn-warning">Editar</a>
-                        <a href="eliminar_tratamiento.php?cod_trat=<?php echo $fila['cod_trat']; ?>" class="btn btn-danger">Eliminar</a>
+                        <a href="formulario_editar_aparato.php?cod_ap=<?php echo $fila['cod_ap']; ?>" class="btn btn-warning">Editar</a>
+                        <a href="eliminar_aparato.php?cod_ap=<?php echo $fila['cod_ap']; ?>" class="btn btn-danger">Eliminar</a>
                     </td>
                 </tr>
                 
