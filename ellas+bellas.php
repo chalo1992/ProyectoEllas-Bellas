@@ -199,7 +199,8 @@
                 MAQUILLAJE Y PESTAÑAS
             </div>
             <div class="card-body">
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <p class="card-text">¿Quieres estar radiante para cualquier tipo de evento/celebración? ¡Prueba nuestro servicio de maquillaje, 
+                    permanente y tinte de pestañas y nuestros diseños de ceja con henna!</p>
             <div class="text-center">
                 <a href="tratamientos_maquillajeManosPestañas.php" class="btn btn-custom">Saber mas</a>
             </div>
@@ -215,7 +216,7 @@
 
     <div class="formulario">
         <form action="https://formsubmit.co/chalo1992@hotmail.com" class="w-75 m-0 mx-auto mt-5" id="formulario" method="POST" onsubmit="return validarFormulario(event)">
-            <h3 class="text-center text-light pb-3">Solicita una cita o pide información</h3>
+            <h3 class="text-center text-light pb-3">Solicita una cita, un producto o solo pide información</h3>
             <div class="form-group">
             <label for="nombre">Nombre: </label>
             <input type="text" class="form-control" name="nombre" id="nombre" aria-describedby="emailHelp" placeholder="Nombre:" required>
